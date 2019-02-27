@@ -6,7 +6,7 @@
 
 Five downstream data sources to deal with:
 
-* BC Cancer clinical guidelines [website](http://www.bccancer.bc.ca/health-professionals] (Clinical Resources, Clinical Trials and Studies)
+* BC Cancer clinical guidelines [website](http://www.bccancer.bc.ca/health-professionals) (Clinical Resources, Clinical Trials and Studies)
 
 * BC Ministry of Health [Guidelines](https://www2.gov.bc.ca/gov/content/health/practitioner-professional-resources/bc-guidelines) 
 
