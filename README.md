@@ -10,18 +10,18 @@ Five downstream data sources to deal with:
 
 * BC Ministry of Health [Guidelines](https://www2.gov.bc.ca/gov/content/health/practitioner-professional-resources/bc-guidelines) 
 
+* CADTH pan-Canadian Oncology Drug [Review](https://www.cadth.ca/pcodr)
 
+* CPIC [Guidelines](https://cpicpgx.org/guidelines/)
 
 * [PharmGKB](https://www.pharmgkb.org/)
 
 
 
-* CPIC [Guidelines](https://cpicpgx.org/guidelines/)
 
 
 
 
-* CADTH pan-Canadian Oncology Drug [Review](https://www.cadth.ca/pcodr)
 
 
 
