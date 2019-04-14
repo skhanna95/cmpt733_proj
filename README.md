@@ -9,7 +9,7 @@ Firstly, we conducted EDA on `Genome BC publication export Feb 2019.xlsx` which 
 ### Clean the Genome BC data
 
 we opened the 'Genome BC publication export Feb 2019.xlsx' file, fixed some anomaly lines,
-such as line 3088, manully and stored the file as `gbc.csv`
+such as line 3088, manually and stored the file as `gbc.csv`
 
 Then we split `gbc.csv` into `gbc_doi_issn_ibsn.csv`, `gbc_nopmid_nodoi.csv` and `gbc_pmid.csv`
 based on whether the entity has PMID value or DOI value.
