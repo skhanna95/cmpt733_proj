@@ -6,7 +6,7 @@
 
 Firstly, we conducted EDA on `Genome BC publication export Feb 2019.xlsx` which is offered by Genome BC listing the academic papers they funded.
 
-### Clean the Gnome BC data
+### Clean the Genome BC data
 
 we opened the 'Genome BC publication export Feb 2019.xlsx' file, fixed some anomaly lines,
 such as line 3088, manully and stored the file as `gbc.csv`
