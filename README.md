@@ -1,9 +1,12 @@
-# cmpt733_proj
+# cmpt733_project
 
+# Instructions
 [The course project demands.](https://sfu-db.github.io/bigdata-cmpt733/FinalProject/project-instruction.html)
 
+# About
 [The project description.](https://sfu-db.github.io/bigdata-cmpt733/FinalProject/Measuring-observable-influence-and-impact-of-scientific-research-beyond-academia.pdf)
 
+# Components
 Five downstream data sources to deal with:
 
 * BC Cancer clinical guidelines [website](http://www.bccancer.bc.ca/health-professionals) (Clinical Resources, Clinical Trials and Studies)
