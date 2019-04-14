@@ -4,7 +4,7 @@
 
 ## EDA
 
-Firstly, we conducted EDA on `Genome BC publication export Feb 2019.xlsx` which is offered by Gnome BC listing the academic papers they funded.
+Firstly, we conducted EDA on `Genome BC publication export Feb 2019.xlsx` which is offered by Genome BC listing the academic papers they funded.
 
 ### Clean the Gnome BC data
 
@@ -17,8 +17,8 @@ based on whether the entity has PMID value or DOI value.
 Then we divided `gbc_nopmid_nodoi.csv` into two files `gbcnn_hastitle.csv` and `gbcnn_notitle.csv`
 based on whether the entity has title.
 
-For the 170 entitise that has no title, we explored manully and determined to
-discard them as they has no useful information.
+For the 170 entitise that has no title, we explored manually and determined to
+discard them as they have no useful information.
 For those that have titles, we used offline dataset `PMC-ids.csv` and APIs
 offered by NCBI to get its PMID.
 For running this code, you should down load `PMC-ids.csv` using this [link](ftp://ftp.ncbi.nlm.nih.gov/pub/pmc/PMC-ids.csv.gz).
@@ -26,7 +26,7 @@ For running this code, you should down load `PMC-ids.csv` using this [link](ftp:
 For entitise in `gbc_doi_issn_ibsn.csv`, we used offline database `PMC-ids.csv` and APIs
 offered by NCBI to get its PMID.
 
-In the end, we droped dupliates and generated `gbc_ff.csv` listing all the unique entitise that have PMID values from `Genome BC publication export Feb 2019.xlsx`.
+In the end, we droped dupliates and generated `gbc_ff.csv` listing all the unique entities that have PMID values from `Genome BC publication export Feb 2019.xlsx`.
 We get 2703 meaningful entities out of 3216 entities.
 
 All the steps can be done by running `code/1GenomeBC_EDA/EDA.ipynb`
