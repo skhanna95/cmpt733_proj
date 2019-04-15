@@ -75,9 +75,8 @@ This step will take around 12 hours.
 ## Parsing pdf files
 
 ### pdf to XML ...
-...
 
-### XML to `reference.csv`
+### PDFs to `reference.csv`
 open pdfparsing.
 To process the pdfs and parsing the references:
 make sure that `config.py` has the correct path for pdf2xml.exe. You can download it from here or from sourceforge.
