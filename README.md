@@ -78,7 +78,20 @@ This step will take around 12 hours.
 ...
 
 ### XML to `reference.csv`
-...
+open pdfparsing.
+To process the pdfs and parsing the references:
+make sure that `config.py` has the correct path for pdf2xml.exe. You can download it from here or from sourceforge.
+run `extract_references.ipynb` 
+change the `directory` to the directory of pdfs.
+change the `dir_name` to start of parent folder till the folder where pdfs are. 
+Example: if pdfs are in /home/user_name/xyz/abc/mno/pqr then 
+change `directory` to `directory='/home/user_name/xyz/abc/mno/pqr'` and
+`dir_name` to `dir_name='xyz/abc/mno/pqr/'`
+
+##After updating these
+run all the cells in order and make sure all python scripts are in the same directory as of notebook
+
+
 From 4739 pdf files, we extract 5383 refernce lines.
 
 ### `reference.csv` to `pdf_title_pmid.csv`
