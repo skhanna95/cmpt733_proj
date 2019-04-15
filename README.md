@@ -74,8 +74,6 @@ This step will take around 12 hours.
 
 ## Parsing pdf files
 
-### pdf to XML ...
-
 ### PDFs to `reference.csv`
 open pdfparsing.
 To process the pdfs and parsing the references:
@@ -83,11 +81,11 @@ make sure that `config.py` has the correct path for pdf2xml.exe. You can downloa
 run `extract_references.ipynb` 
 change the `directory` to the directory of pdfs.
 change the `dir_name` to start of parent folder till the folder where pdfs are. 
-Example: if pdfs are in /home/user_name/xyz/abc/mno/pqr then 
+Example: if pdfs are in `/home/user_name/xyz/abc/mno/pqr` then 
 change `directory` to `directory='/home/user_name/xyz/abc/mno/pqr'` and
 `dir_name` to `dir_name='xyz/abc/mno/pqr/'`
 
-##After updating these
+#### After updating these
 run all the cells in order and make sure all python scripts are in the same directory as of notebook
 
 
@@ -147,4 +145,4 @@ Run command `python prepare_data_for_topx_visulization.py` in terminal.
 
 Run command `python prepare_data_for_topxpapers_barchart.py` in terminal.
 
-Run `Report.ipynb` to get the visulization result.
+Run `Report-online.ipynb` to get the visulization result.
