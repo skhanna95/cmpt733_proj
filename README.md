@@ -4,7 +4,8 @@
 
 ## EDA
 
-Firstly, we conducted EDA on `Genome BC publication export Feb 2019.xlsx` which is offered by Gnome BC listing the academic papers they funded.
+Firstly, we conducted EDA on `Genome BC publication export Feb 2019.xlsx`
+which is offered by Gnome BC listing the academic papers they funded.
 
 ### Clean the Gnome BC data
 
@@ -63,31 +64,29 @@ Goto `2_scrapy` then go to `bbc`, `cadth` and `cpic` folder respectively, run co
 pgkb is an js generated dynamic website, so we used scrappy and selenium to
 scrapy the pdf files and extract all the DOI, PMCID and PMID references.
 Goto `2_scrapy` then go to `pgkd`, run command `scrapy crawl downloadPDFs` in terminal.
+This step will take around 12 hours.
 
 ## Parsing pdf files
 
+### pdf to XML ...
 ...
 
-pdf -> `titles_authors.csv`
-
-`titles_authors.csv` -> `title_pmids.csv`
-
+### XML to `reference.csv`
 ...
+
+### `reference.csv` to `pdf_title_pmid.csv`
+Run `extractTitleThenGetPMID.ipynb` will extract the title from `reference.csv`
+and query NBCI api to get the corresponding pmid. 
 
 ## Data cleaning and data integration
 
-Put all the results in `data/5entrise_ppd`.
+We put all the results in `data/5entrise_ppd`.
 Goto `4_DataIntegration/5entrise_ppd`. 
 Run `cadth/txt2pmids.csv.ipynb`, `cpic/txt2pmids.csv.ipynb` and
 `pgkb/txt2pmids.csv.ipynb`. 
 Run `combine_pmids.csv.ipynb`.
 Run `pmids.csvTOpmids_titles.csv.ipynb`
 Then we will get `pmids_titles.csv`
-
-...
-Then concatenate `title_pmids.csv` obtained from paring pdf files to
-`pmids_titles.csv`.
-...
 
 ## Data Analysis and Visulization
 
