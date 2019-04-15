@@ -79,10 +79,21 @@ This step will take around 12 hours.
 
 ### XML to `reference.csv`
 ...
+From 4739 pdf files, we extract 5383 refernce lines.
 
 ### `reference.csv` to `pdf_title_pmid.csv`
 Run `extractTitleThenGetPMID.ipynb` will extract the title from `reference.csv`
 and query NBCI api to get the corresponding pmid. 
+
+From 5383 reference lines, we extract 1246 titles using regular expression
+combined with NCBI APIs.
+We set the regular expression rule like this: every title is between two
+periods, and the number of words in the title should greater than 4.
+Then we verify this title by quering NCBI API.
+If we can find a paper the title of whom has an edit distance less than 4 to
+the title, then we can be sure that the title is indeed a valid paper title.
+In the meantime, we get the corresponding PMID of this paper.
+
 
 ## Data cleaning and data integration
 
